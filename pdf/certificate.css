@@ -1,0 +1,10 @@
+@page {
+  background-image: url("b.jpg");
+  font.family:'Verdana';
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
