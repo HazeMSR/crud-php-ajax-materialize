@@ -18,7 +18,11 @@ $(document).ready(function(e) {
 						$(location).attr("href","php/crud.php");
 					}
 					else{
+<<<<<<< HEAD
 						alert("ERROR: "+respAX);
+=======
+						alert("ERROR");
+>>>>>>> 4809289930f73580b86807a029a0815a3288097e
 					}
 				}
 			});

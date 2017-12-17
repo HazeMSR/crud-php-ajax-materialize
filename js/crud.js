@@ -125,7 +125,11 @@ $(document).ready(function(e) {
 					"<br><i class='fa fa-hourglass-end blue-text'></i>  <b>Fecha de Nacimiento:</b> "+obj.fechanac+
 					"<br><i class='fa fa-phone blue-text'></i>  <b>Telefono:</b> "+(obj.telefono==null?" ":obj.telefono)+
 					"<br><i class='fa fa-phone-square blue-text'></i>  <b>Movil:</b> "+(obj.movil==null?" ":obj.movil)+
+<<<<<<< HEAD
 					"<br><i class='fa fa-envelope blue-text'></i>  <b>E-mail:</b> "+(obj.email==null?" ":obj.email)+
+=======
+					"<br><i class='fa fa-envelope blue-text'></i>  <b>E-mail:</b> "+ obj.email +
+>>>>>>> 4809289930f73580b86807a029a0815a3288097e
 
 					"</p>";
 				$("#respAX").html(cadenaHTML);
@@ -195,7 +199,11 @@ $(document).ready(function(e) {
 					}else{
 						$.alert({
 							title:"TWeb - 20181",
+<<<<<<< HEAD
 							content:"No se pudo insertar el registro. Vuelva a intentarlo: "+respAX,
+=======
+							content:"No se pudo insertar el registro. Vuelva a intentarlo",
+>>>>>>> 4809289930f73580b86807a029a0815a3288097e
 							type:"red",
 							useBootstrap:false,
 							boxWidth:"50%"
@@ -203,7 +211,10 @@ $(document).ready(function(e) {
 					}
 				}
 			})
+<<<<<<< HEAD
 			console.log(respAX);
+=======
+>>>>>>> 4809289930f73580b86807a029a0815a3288097e
 		}
 	});
 	

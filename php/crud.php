@@ -39,7 +39,11 @@
             	<div class="col s12">
                 	<table class="striped responsive-table">
                     	<thead>
+<<<<<<< HEAD
                         	<tr><th>CURP</th><th>Acci&oacute;n</th>
+=======
+                        	<tr><th>CURP</th><th>Nombre</th><th>Operaciones</th>
+>>>>>>> 4809289930f73580b86807a029a0815a3288097e
                         </thead>
                         <tbody>
   							<div id="infoEstudiantes">
@@ -58,7 +62,11 @@
     
   	<div id="modalAX" class="modal">
         <div class="modal-content">
+<<<<<<< HEAD
           	<h4 class="center-align blue white-text">SEE</h4>
+=======
+          	<h4 class="center-align blue white-text">TWeb - 20181</h4>
+>>>>>>> 4809289930f73580b86807a029a0815a3288097e
           	<div id="respAX"></div>
         </div>
         <div class="modal-footer">
@@ -69,7 +77,11 @@
     <!--Modifica los datos del alumno con la instruccion update en el crud.js y update_AX-->
   	<div id="modalFormUpd" class="modal">
         <div class="modal-content">
+<<<<<<< HEAD
           <h4 class="center-align blue white-text">SEE</h4>
+=======
+          <h4 class="center-align blue white-text">TWeb - 20181</h4>
+>>>>>>> 4809289930f73580b86807a029a0815a3288097e
             <form id="formUpd">
             <div class="row">
               <div class="col s12 l6 input-field">
@@ -158,6 +170,7 @@
         </div>
   	</div>
     
+<<<<<<< HEAD
     <!--Modal que contiene el formulario para insertar un nuevo alumno-->
     <div id="modalFormIns" class="modal">
         <div class="modal-content">
@@ -259,6 +272,41 @@
                 <input type="text" id="email" value="" name="email">
               </div>
             </div>
+=======
+    <div id="modalFormIns" class="modal">
+        <div class="modal-content">
+          <h4 class="center-align blue white-text">TWeb - 20181</h4>
+            <form id="formIns">
+            <div class="row">
+              <div class="col s12 l6 input-field">
+                <label for="curp">curp</label>
+                <input type="text" id="curp" name="curp" data-validetta="required">
+              </div>
+              <div class="col s12 l6 input-field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" data-validetta="required">
+              </div>
+              <div class="col s12 l6 input-field">
+                <label for="primerApe">Primer Apellido</label>
+                <input type="text" id="primerApe" name="primerApe" data-validetta="required">
+              </div>
+              <div class="col s12 l6 input-field">
+                <label for="segundoApe">Segundo Apellido</label>
+                <input type="text" id="segundoApe" name="segundoApe" data-validetta="required">
+              </div>
+              <div class="col s12 l6 input-field">
+                <select id="sexo" name="sexo" data-validetta="required">
+                	<option value=""> -------- </option>
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                </select>
+                <label for="sexo">Sexo</label>
+              </div>
+              <div class="col s12 l6 input-field">
+                <label for="correo">Correo</label>
+                <input type="text" id="correo" name="correo" data-validetta="required">
+              </div>
+>>>>>>> 4809289930f73580b86807a029a0815a3288097e
               <div class="col s12 input-field">
                 <button type="submit" class="btn blue" style="width:100%;">Insertar</button>
               </div>
