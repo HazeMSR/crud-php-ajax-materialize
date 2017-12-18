@@ -33,36 +33,42 @@
 					<p><img src="<?php echo $filasU[3];?>" style="height:auto; width:25%;"></p>
 				</header>
 				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">Proceed as anticipated</a>
+					<!--<a href="#banner" class="button style2 scrolly-middle">Proceed as anticipated</a>-->
 				</footer>
 			</section>
 
 		<!-- Alumnos de Excelencia -->
+		<?php if($filasA[8]>=8.5){ ?>
 			<section class="banner banner1" >
-			<input type="hidden" id="promedio" name="promedio" value="<?php echo $filasA[8];?>">
+			<input type="text" id="promedio" name="promedio" value="<?php echo $filasA[8];?>">
 				<header>
 					<h2>Alumnos de Excelencia</h2>
 				</header>
 				<p>Felicidades, usted est&aacute; invitado a la ceremonia de entrega de diplomas de excelencia.</p> 
 				<p>Para confirmar su asistencia de click en el bot&oacute;n.</p>
 				<footer>
-					<a href="confirmarE.php" class="button style2 scrolly">Confirmar</a>
+					<a href="confirmarE.php" class="button style2 scrolly">Continuar</a>
 				</footer>
-			</section>			
+			</section>	
+		<?php } 
+
+		?>		
 		<!-- Graduados -->
 			<section class="banner banner2">
-			<input type="hidden" id="tt2" name="tt2" value="<?php echo $filasI[2];?>">
+			<input type="text" id="tt2" name="tt2" value="<?php echo $filasI[2];?>">
 				<header>
 					<h2>Graduaci&oacute;n</h2>
 				</header>
 				<p>Felicidades, usted est&aacute; invitado a la ceremonia de graduacion.</p> 
 				<p>Para confirmar su asistencia de click en el bot&oacute;n.</p>
 				<footer>
-					<a href="#first" class="button style2 scrolly">Confirmar</a>
+					<a href="confirmarG.php" class="button style2 scrolly">Continuar</a>
 				</footer>
 			</section>
 
 		<!-- Fotos de excelencia -->
+		<?php 
+		if($filasA[17]==0){?>
 			<article class="container box style2 excelencia">
 				<header>
 					<h2>Fotos de la entrega de diplomas de Excelencia</h2>
@@ -83,8 +89,31 @@
 					</div>
 				</div>
 			</article>
-
+		<?php } if($filasA[18]==0){?>
+		<!-- Fotos de graduacion -->
+			<article class="container box style2 graduacion">
+				<header>
+					<h2>Fotos de la entrega de diplomas de Graduaci&oacute;n</h2>
+					<p>Algunos recuerdos que perdurar&aacute;n</p>
+				</header>
+				<div class="inner gallery">
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a href="../img/fulls/01.jpg" class="image fit"><img src="../img/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
+						<div class="3u 12u(mobile)"><a href="../img/fulls/02.jpg" class="image fit"><img src="../img/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
+						<div class="3u 12u(mobile)"><a href="../img/fulls/03.jpg" class="image fit"><img src="../img/thumbs/03.jpg" alt="" title="Raven" /></a></div>
+						<div class="3u 12u(mobile)"><a href="../img/fulls/04.jpg" class="image fit"><img src="../img/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
+					</div>
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a href="../img/fulls/05.jpg" class="image fit"><img src="../img/thumbs/05.jpg" alt="" title="Cherish" /></a></div>
+						<div class="3u 12u(mobile)"><a href="../img/fulls/06.jpg" class="image fit"><img src="../img/thumbs/06.jpg" alt="" title="Different." /></a></div>
+						<div class="3u 12u(mobile)"><a href="../img/fulls/07.jpg" class="image fit"><img src="../img/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
+						<div class="3u 12u(mobile)"><a href="../img/fulls/08.jpg" class="image fit"><img src="../img/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
+					</div>
+				</div>
+			</article>
+		<?php }?>
 		<!-- Contact -->
+		<!--
 			<article class="container box style3">
 				<header>
 					<h2>Nisl sed ultricies</h2>
@@ -105,7 +134,7 @@
 					</div>
 				</form>
 			</article>
-
+			-->
 		<!-- Generic -->
 		<!--
 			<article class="container box style3">

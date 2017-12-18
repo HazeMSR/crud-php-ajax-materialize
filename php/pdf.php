@@ -20,8 +20,9 @@
 	);
 
 	$usuario= $_SESSION["usuario"];
+	$evento= $_SESSION["evento"];
 
-	$sqlEst = "SELECT * FROM evento WHERE idEvento='Excelencia 2017_2'";
+	$sqlEst = "SELECT * FROM evento WHERE idEvento='$evento'";
 	$resEst = mysqli_query($conexion, $sqlEst);
 	$filasE = mysqli_fetch_array($resEst,MYSQLI_BOTH);
 

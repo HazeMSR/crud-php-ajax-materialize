@@ -127,7 +127,6 @@ $(document).ready(function(e) {
 					"<br><i class='fa fa-phone-square blue-text'></i>  <b>Movil:</b> "+(obj.movil==null?" ":obj.movil)+
 					"<br><i class='fa fa-envelope blue-text'></i>  <b>E-mail:</b> "+(obj.email==null?" ":obj.email)+
 					"<br><i class='fa fa-envelope blue-text'></i>  <b>E-mail:</b> "+ obj.email +
-
 					"</p>";
 				$("#respAX").html(cadenaHTML);
 				$("#modalAX").modal("open");
