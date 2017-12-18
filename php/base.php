@@ -4,7 +4,6 @@
 	if($_SESSION["valido"] == "sesion"){
 		include("crud_BDusuario.php");
 ?>
-
 <!DOCTYPE HTML>
 <!--
 	Overflow by HTML5 UP
@@ -19,119 +18,12 @@
 		<!--[if lte IE 8]><script src="../js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="../css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="../css/ie8.css" /><![endif]-->
-  		
-  		<script src="../js/jquery-3.1.1.min.js"></script>
-		<script src="../js/inicioU.js"></script>
 	</head>
+	<script></script>
 	<body>
 		<a href="cerrarSesion.php?nombSesion=valido" class="button style2" style="height:1%; width:15%;">Cerrar Sesi&oacute;n</a>			
-		<!-- Header -->
-			<section id="header" style="">
-				<header>
-					<h1>¡Hola <?php echo $filasU[0];?>!</h1>
-					<p><img src="<?php echo $filasU[3];?>" style="height:auto; width:25%;"></p>
-				</header>
-				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">Proceed as anticipated</a>
-				</footer>
-			</section>
 
-		<!-- Alumnos de Excelencia -->
-			<section class="banner" id="banner1" >
-			<input type="hidden" id="promedio" name="promedio" value="<?php echo $filasA[8];?>">
-				<header>
-					<h2>Alumnos de Excelencia</h2>
-				</header>
-				<p>Felicidades, usted est&aacute; invitado a la ceremonia de entrega de diplomas de excelencia.</p> 
-				<p>Para confirmar su asistencia de click en el bot&oacute;n.</p>
-				<footer>
-					<a href="#first" class="button style2 scrolly">Confirmar</a>
-				</footer>
-			</section>			
-		<!-- Graduados -->
-			<section class="banner" id="banner2">
-			<input type="hidden" id="tt2" name="tt2" value="<?php echo $filasI[2];?>">
-				<header>
-					<h2>This is Overflow</h2>
-				</header>
-				<p>A brand new site template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>.<br />
-				It’s fully responsive, built on <strong>skel</strong>, and of course entirely free<br />
-				under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
-				<footer>
-					<a href="#first" class="button style2 scrolly">Act on this message</a>
-				</footer>
-			</section>
-
-		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
-				<a href="#" class="image fit"><img src="../img/pic01.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Lorem ipsum<br />
-						dolor sit amet</h2>
-					</header>
-					<p>Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.</p>
-				</div>
-			</article>
-
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="#" class="image fit"><img src="../img/pic02.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Mollis posuere<br />
-						lectus lacus</h2>
-					</header>
-					<p>Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.</p>
-				</div>
-			</article>
-
-		<!-- Portfolio -->
-			<article class="container box style2">
-				<header>
-					<h2>Magnis parturient</h2>
-					<p>Justo phasellus et aenean dignissim<br />
-					placerat cubilia purus lectus.</p>
-				</header>
-				<div class="inner gallery">
-					<div class="row 0%">
-						<div class="3u 12u(mobile)"><a href="../img/fulls/01.jpg" class="image fit"><img src="../img/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
-						<div class="3u 12u(mobile)"><a href="../img/fulls/02.jpg" class="image fit"><img src="../img/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
-						<div class="3u 12u(mobile)"><a href="../img/fulls/03.jpg" class="image fit"><img src="../img/thumbs/03.jpg" alt="" title="Raven" /></a></div>
-						<div class="3u 12u(mobile)"><a href="../img/fulls/04.jpg" class="image fit"><img src="../img/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
-					</div>
-					<div class="row 0%">
-						<div class="3u 12u(mobile)"><a href="../img/fulls/05.jpg" class="image fit"><img src="../img/thumbs/05.jpg" alt="" title="Cherish" /></a></div>
-						<div class="3u 12u(mobile)"><a href="../img/fulls/06.jpg" class="image fit"><img src="../img/thumbs/06.jpg" alt="" title="Different." /></a></div>
-						<div class="3u 12u(mobile)"><a href="../img/fulls/07.jpg" class="image fit"><img src="../img/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
-						<div class="3u 12u(mobile)"><a href="../img/fulls/08.jpg" class="image fit"><img src="../img/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
-					</div>
-				</div>
-			</article>
-
-		<!-- Contact -->
-			<article class="container box style3">
-				<header>
-					<h2>Nisl sed ultricies</h2>
-					<p>Diam dignissim lectus eu ornare volutpat orci.</p>
-				</header>
-				<form method="post" action="#">
-					<div class="row 50%">
-						<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Name" /></div>
-						<div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="Email" /></div>
-						<div class="12u$">
-							<textarea name="message" placeholder="Message"></textarea>
-						</div>
-						<div class="12u$">
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</div>
-					</div>
-				</form>
-			</article>
-
-		<!-- Generic -->
+		<!-- Base -->
 		<!--
 			<article class="container box style3">
 				<header>

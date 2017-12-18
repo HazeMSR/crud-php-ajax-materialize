@@ -1996,46 +1996,52 @@
 
 /* Banner */
 
-	#banner {
+	.banner {
 		position: relative;
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #0171F1 url("images/banner.svg") bottom center no-repeat;
+		
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
 	}
+	#banner1{
+		background: #0171F1 url("images/banner.svg") bottom center no-repeat;
+	}
+	#banner2{
+		background: #0911AA url("images/banner.svg") bottom center no-repeat;
+	}
 
-		#banner .button {
-			color: #35b882;
+		.banner .button {
+			color: #0171F1;
 			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
 		}
 
-		#banner header {
+		.banner header {
 			margin: 0 0 2em 0;
 		}
 
-			#banner header h2 {
+			.banner header h2 {
 				font-weight: 400;
 				font-size: 1.75em;
 				letter-spacing: 8px;
 			}
 
-		#banner p {
+		.banner p {
 			margin: 0;
 		}
 
-		#banner footer {
+		.banner footer {
 			margin: 2em 0 0 0;
 		}
 
-		#banner a {
+		.banner a {
 			color: inherit;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
-			#banner a:hover {
+			.banner a:hover {
 				border-bottom-color: rgba(255, 255, 255, 0);
 			}
 
@@ -2237,7 +2243,7 @@
 
 		/* Banner */
 
-			#banner {
+			.banner {
 				padding: 4em 0 4em 0;
 				background-size: auto, 175% auto;
 			}
@@ -2310,12 +2316,12 @@
 
 		/* Banner */
 
-			#banner {
+			.banner {
 				padding: 3.5em;
 				background-size: 200% auto;
 			}
 
-				#banner br {
+				.banner br {
 					display: none;
 				}
 
@@ -2489,16 +2495,16 @@
 
 		/* Banner */
 
-			#banner {
+			.banner {
 				padding: 3em 2em 3em 2em;
 				background-size: auto 150%;
 			}
 
-				#banner header {
+				.banner header {
 					margin: 0 0 1em 0;
 				}
 
-					#banner header h2 {
+					.banner header h2 {
 						font-size: 1.5em;
 						letter-spacing: 6px;
 					}
