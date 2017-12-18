@@ -24,6 +24,8 @@
          $(document).ready(function() {
             $('select').material_select();
          });
+          
+
       </script>
 </head>
 
@@ -39,11 +41,7 @@
             	<div class="col s12">
                 	<table class="striped responsive-table">
                     	<thead>
-<<<<<<< HEAD
                         	<tr><th>CURP</th><th>Acci&oacute;n</th>
-=======
-                        	<tr><th>CURP</th><th>Nombre</th><th>Operaciones</th>
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
                         </thead>
                         <tbody>
   							<div id="infoEstudiantes">
@@ -62,11 +60,7 @@
     
   	<div id="modalAX" class="modal">
         <div class="modal-content">
-<<<<<<< HEAD
           	<h4 class="center-align blue white-text">SEE</h4>
-=======
-          	<h4 class="center-align blue white-text">TWeb - 20181</h4>
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
           	<div id="respAX"></div>
         </div>
         <div class="modal-footer">
@@ -77,11 +71,7 @@
     <!--Modifica los datos del alumno con la instruccion update en el crud.js y update_AX-->
   	<div id="modalFormUpd" class="modal">
         <div class="modal-content">
-<<<<<<< HEAD
           <h4 class="center-align blue white-text">SEE</h4>
-=======
-          <h4 class="center-align blue white-text">TWeb - 20181</h4>
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
             <form id="formUpd">
             <div class="row">
               <div class="col s12 l6 input-field">
@@ -170,29 +160,28 @@
         </div>
   	</div>
     
-<<<<<<< HEAD
     <!--Modal que contiene el formulario para insertar un nuevo alumno-->
     <div id="modalFormIns" class="modal">
         <div class="modal-content">
           <h4 class="center-align blue white-text">SEE</h4>
-            <form id="formIns">
-            <div class="row">
-              <div class="col s12 l6 input-field">
-                <label for="curp">CURP</label>
-                <input type="text" id="curp" name="curp" data-validetta="required maxLength[18] minLength[18]">
-              </div>
-              <div class="col s12 l2 input-field">
-                <label for="anio">A&ntilde;o</label>
-                <input type="text" id="anio" name="anio" data-validetta="required number min[1917] max[2000]">
-              </div>
-              <div class="col s12 l2 input-field">
-                <label for="mes">Mes</label>
-                <input type="text" id="mes" name="mes" data-validetta="required number min[1] max[12]">  
-              </div>
-              <div class="col s12 l2 input-field">  
-                <label for="dia">D&iacute;a</label>
-                <input type="text" id="dia" name="dia" data-validetta="required number min[1] max[31]">    
-              </div>
+            <form id="formIns" name="formIns">
+              <div class="row">
+                <div class="col s12 l6 input-field">
+                  <label for="curp">CURP</label>
+                  <input type="text" id="curp" name="curp" value="0" data-validetta="required maxLength[18] minLength[18]">
+                </div>
+                <div class="col s12 l2 input-field">
+                  <label for="anio">A&ntilde;o</label>
+                  <input type="text" id="anio" name="anio" data-validetta="required number min[1917] max[2000]">
+                </div>
+                <div class="col s12 l2 input-field">
+                  <label for="mes">Mes</label>
+                  <input type="text" id="mes" name="mes" data-validetta="required number min[1] max[12]">  
+                </div>
+                <div class="col s12 l2 input-field">  
+                  <label for="dia">D&iacute;a</label>
+                  <input type="text" id="dia" name="dia" data-validetta="required number min[1] max[31]">    
+                </div>
             </div>
             <div class="row">
               <div class="col s12 l6 input-field">
@@ -271,48 +260,24 @@
                 <label for="email">E-mail</label>
                 <input type="text" id="email" value="" name="email">
               </div>
+              <div class="col s12 l6 input-field">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" value="" name="usuario" data-validetta="required maxLength[100]">
+              </div>
+              <div class="col s12 l6 input-field">
+                <label for="contra">Contrase&ntilde;a</label>
+                <input type="password" id="contra" value="" name="contra" data-validetta="required maxLength[100]">
+              </div>
             </div>
-=======
-    <div id="modalFormIns" class="modal">
-        <div class="modal-content">
-          <h4 class="center-align blue white-text">TWeb - 20181</h4>
-            <form id="formIns">
             <div class="row">
-              <div class="col s12 l6 input-field">
-                <label for="curp">curp</label>
-                <input type="text" id="curp" name="curp" data-validetta="required">
               </div>
-              <div class="col s12 l6 input-field">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" data-validetta="required">
-              </div>
-              <div class="col s12 l6 input-field">
-                <label for="primerApe">Primer Apellido</label>
-                <input type="text" id="primerApe" name="primerApe" data-validetta="required">
-              </div>
-              <div class="col s12 l6 input-field">
-                <label for="segundoApe">Segundo Apellido</label>
-                <input type="text" id="segundoApe" name="segundoApe" data-validetta="required">
-              </div>
-              <div class="col s12 l6 input-field">
-                <select id="sexo" name="sexo" data-validetta="required">
-                	<option value=""> -------- </option>
-                    <option value="F">Femenino</option>
-                    <option value="M">Masculino</option>
-                </select>
-                <label for="sexo">Sexo</label>
-              </div>
-              <div class="col s12 l6 input-field">
-                <label for="correo">Correo</label>
-                <input type="text" id="correo" name="correo" data-validetta="required">
-              </div>
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
-              <div class="col s12 input-field">
+                <div class="col s12 input-field">
                 <button type="submit" class="btn blue" style="width:100%;">Insertar</button>
               </div>
             </div>
-            </form>
-        </div>
+          </form>
+        </div>  
+      </div>
   	</div>
 </body>
 </html>

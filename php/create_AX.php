@@ -1,7 +1,6 @@
 <?php
 	include("configBD.php");
 	include("getPosts.php");
-<<<<<<< HEAD
 
 	$curp = $_POST["curp"];
 	$ingreso = $_POST["ingreso"];
@@ -22,21 +21,27 @@
 	$movil = $_POST["movil"];
 	$email = $_POST["email"];
 
+	$usuario = $_POST["usuario"];
+	$contra = $_POST["contra"];
+
 	$fecha = $anio."-".$mes."-".$dia;
-	$sqlIns = "INSERT INTO alumno (curp, ingreso, carrera, plan, especialidad, semestre, creditos, creditosinscritos, promedio, turno, genero, edad, fechanac, telefono, movil,email) VALUES ('$curp','$ingreso','$carrera','$plan','$especialidad','$semestre','$creditos','$creditosins','$promedio','$turno','$genero','$edad','$fecha','$telefono','$movil','$email')";
-=======
-	
-	$sqlIns = "INSERT INTO alumno VALUES('$curp','$ingreso','$carrera','$plan','$especialidad','$semestre','$creditos','$creditosI','$promedio','$turno','$genero','$edad','$fecha','$telefono')";
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
+	$sqlIns = "INSERT INTO alumno (curp, ingreso, carrera, plan, especialidad, semestre, creditos, creditosinscritos, promedio, turno, genero, edad, fechanac, telefono, movil,email,usuario) VALUES ('$curp','$ingreso','$carrera','$plan','$especialidad','$semestre','$creditos','$creditosins','$promedio','$turno','$genero','$edad','$fecha','$telefono','$movil','$email','$usuario')";
+
 	$resIns = mysqli_query($conexion, $sqlIns);
 	$infIns = mysqli_affected_rows($conexion);
-	if($infIns == 1){
-		echo 1; //OK. Se realizó el registro del estudiante
+
+	if($infIns == 1){//OK. Se realizó el registro del alumno
+		$sqlIns = "INSERT INTO usuario (usuario, password) VALUES ('$usuario','$contra')";
+		$resIns = mysqli_query($conexion, $sqlIns);
+		$infIns = mysqli_affected_rows($conexion);
+		if($infIns == 1){//OK. Se realizó el registro del usuario
+			echo 1; 
+		}else{
+			echo 3;
+		}
 	}else{
-<<<<<<< HEAD
-		echo $sqlIns; //ERROR. No se pudo realizar el registro del estudiante
-=======
-		echo 0; //ERROR. No se pudo realizar el registro del estudiante
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
+		echo 2;
 	}
+
+
 ?>

@@ -6,7 +6,6 @@
 	formularios.*/
 	//$curp = $_POST["curp"];
 	//$pass = $_POST["pass"];
-
 	$sqlEst = "SELECT * FROM alumno";
 	$resEst = mysqli_query($conexion, $sqlEst);
 	
@@ -16,8 +15,6 @@
 		$regEst .= "
 		<tr>
 			<td>$filas[0]</td>
-
-			<td>$filas[1] </td>
 
 			<td>
 				<i class='fa fa-close eliminar' data-eliminar='$filas[0]'></i>

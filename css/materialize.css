@@ -4389,13 +4389,13 @@ nav .input-field label {
 }
 
 nav .input-field label i {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   -webkit-transition: color .3s;
   transition: color .3s;
 }
 
 nav .input-field label.active i {
-  color: #fff;
+  color: #050505;
 }
 
 .navbar-fixed {

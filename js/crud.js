@@ -12,7 +12,7 @@ $(document).ready(function(e) {
         console.log(curpDel);
     
 		$.confirm({
-			title:"TWeb - 20181",
+			title:"SEE",
 			content:"Desea eliminar el registro de la curp: "+curpDel,
 			type:"blue",
 			useBootstrap:false,
@@ -27,7 +27,7 @@ $(document).ready(function(e) {
 						success:function(respAX){
 							if(respAX == 1){
 								$.alert({
-									title:"TWeb - 20181",
+									title:"SEE",
 									content:"El registro se elimin&oacute; correctamente",
 									type:"green",
 									useBootstrap:false,
@@ -38,7 +38,7 @@ $(document).ready(function(e) {
 								})
 							}else{
 								$.alert({
-									title:"TWeb - 20181",
+									title:"SEE",
 									content:"Se presentaron problemas en la operación: "+respAX,
 									type:"red",
 									useBootstrap:false,
@@ -125,11 +125,8 @@ $(document).ready(function(e) {
 					"<br><i class='fa fa-hourglass-end blue-text'></i>  <b>Fecha de Nacimiento:</b> "+obj.fechanac+
 					"<br><i class='fa fa-phone blue-text'></i>  <b>Telefono:</b> "+(obj.telefono==null?" ":obj.telefono)+
 					"<br><i class='fa fa-phone-square blue-text'></i>  <b>Movil:</b> "+(obj.movil==null?" ":obj.movil)+
-<<<<<<< HEAD
 					"<br><i class='fa fa-envelope blue-text'></i>  <b>E-mail:</b> "+(obj.email==null?" ":obj.email)+
-=======
 					"<br><i class='fa fa-envelope blue-text'></i>  <b>E-mail:</b> "+ obj.email +
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
 
 					"</p>";
 				$("#respAX").html(cadenaHTML);
@@ -151,7 +148,7 @@ $(document).ready(function(e) {
 				success: function(respAX){
 					if(respAX == 1){
 						$.alert({
-							title:"TWeb - 20181",
+							title:"SEE",
 							content:"Se actualizó correctamente el registro seleccionado",
 							type:"green",
 							useBootstrap:false,
@@ -162,7 +159,7 @@ $(document).ready(function(e) {
 						});
 					}else{
 						$.alert({
-							title:"TWeb - 20181",
+							title:"SEE",
 							content:"No se pudo actualizar el registro. Vuelva a intentarlo: "+respAX,
 							type:"red",
 							useBootstrap:false,
@@ -187,7 +184,7 @@ $(document).ready(function(e) {
 				success: function(respAX){
 					if(respAX == 1){
 						$.alert({
-							title:"TWeb - 20181",
+							title:"SEE",
 							content:"Se agregó correctamente el estudiante",
 							type:"green",
 							useBootstrap:false,
@@ -197,25 +194,30 @@ $(document).ready(function(e) {
 							}
 						});
 					}else{
-						$.alert({
-							title:"TWeb - 20181",
-<<<<<<< HEAD
-							content:"No se pudo insertar el registro. Vuelva a intentarlo: "+respAX,
-=======
-							content:"No se pudo insertar el registro. Vuelva a intentarlo",
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
-							type:"red",
-							useBootstrap:false,
-							boxWidth:"50%"
-						});
+						if(respAX == 2){
+							$.alert({
+								title:"SEE",
+								content:"No se pudo insertar el registro en los alumnos. Intente con otro CURP.",
+								type:"red",
+								useBootstrap:false,
+								boxWidth:"50%"
+							});
+						}
+						else{
+							$.alert({
+								title:"SEE",
+								content:"No se pudo insertar el registro en los usuario. Intente con otro usuario. ",
+								type:"red",
+								useBootstrap:false,
+								boxWidth:"50%"
+							});
+						}
 					}
 				}
 			})
-<<<<<<< HEAD
 			console.log(respAX);
-=======
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
 		}
 	});
-	
+
+
 });

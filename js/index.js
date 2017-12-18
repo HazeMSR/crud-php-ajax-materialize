@@ -13,16 +13,18 @@ $(document).ready(function(e) {
 				url:"php/index_AX.php",
 				cache:false,
 				data:$("#formAcc").serialize(),
-				success: function(respAX){
-					if(respAX == 1){
-						$(location).attr("href","php/crud.php");
-					}
-					else{
-<<<<<<< HEAD
-						alert("ERROR: "+respAX);
-=======
-						alert("ERROR");
->>>>>>> 4809289930f73580b86807a029a0815a3288097e
+				success: function(respAX){				
+					if(respAX==-1){
+						alert("ERROR. El password o el usuario no coinciden.");
+					}else{
+						console.log(respAX);
+						if(respAX == 1){
+							$(location).attr("href","php/crud.php");
+						}else{
+							if(respAX == 0){
+								$(location).attr("href","php/inicioUsuario.php");
+							}
+						}
 					}
 				}
 			});

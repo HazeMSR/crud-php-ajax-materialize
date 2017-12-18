@@ -19,7 +19,15 @@ nav .brand-logo {
 p {
   line-height: 2rem;
 }
-
+#lcurp,#lcontra{
+  font-size: 30px;
+  color:#1b7cff;
+}
+input{
+  font-size: 30px;
+  font-style: oblique;
+  color:#05bd6f;
+}
 .button-collapse {
   color: #26a69a;
 }
@@ -55,7 +63,7 @@ p {
 
 @media only screen and (max-width : 600px) {
   .parallax-container {
-  min-height: 80em;
+  min-height: 50em;
   }
   #index-banner .section {
     position: absolute;
