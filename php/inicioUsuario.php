@@ -22,6 +22,7 @@
   		
   		<script src="../js/jquery-3.1.1.min.js"></script>
 		<script src="../js/inicioU.js"></script>
+		<script src="../js/confirmaE.js"></script>
 	</head>
 	<body>
 		<a href="cerrarSesion.php?nombSesion=valido" class="button style2" style="height:1%; width:15%;">Cerrar Sesi&oacute;n</a>			
@@ -37,7 +38,7 @@
 			</section>
 
 		<!-- Alumnos de Excelencia -->
-			<section class="banner" id="banner1" >
+			<section class="banner banner1" >
 			<input type="hidden" id="promedio" name="promedio" value="<?php echo $filasA[8];?>">
 				<header>
 					<h2>Alumnos de Excelencia</h2>
@@ -45,53 +46,27 @@
 				<p>Felicidades, usted est&aacute; invitado a la ceremonia de entrega de diplomas de excelencia.</p> 
 				<p>Para confirmar su asistencia de click en el bot&oacute;n.</p>
 				<footer>
-					<a href="#first" class="button style2 scrolly">Confirmar</a>
+					<a href="confirmarE.php" class="button style2 scrolly">Confirmar</a>
 				</footer>
 			</section>			
 		<!-- Graduados -->
-			<section class="banner" id="banner2">
+			<section class="banner banner2">
 			<input type="hidden" id="tt2" name="tt2" value="<?php echo $filasI[2];?>">
 				<header>
-					<h2>This is Overflow</h2>
+					<h2>Graduaci&oacute;n</h2>
 				</header>
-				<p>A brand new site template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>.<br />
-				It’s fully responsive, built on <strong>skel</strong>, and of course entirely free<br />
-				under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
+				<p>Felicidades, usted est&aacute; invitado a la ceremonia de graduacion.</p> 
+				<p>Para confirmar su asistencia de click en el bot&oacute;n.</p>
 				<footer>
-					<a href="#first" class="button style2 scrolly">Act on this message</a>
+					<a href="#first" class="button style2 scrolly">Confirmar</a>
 				</footer>
 			</section>
 
-		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
-				<a href="#" class="image fit"><img src="../img/pic01.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Lorem ipsum<br />
-						dolor sit amet</h2>
-					</header>
-					<p>Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.</p>
-				</div>
-			</article>
-
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="#" class="image fit"><img src="../img/pic02.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Mollis posuere<br />
-						lectus lacus</h2>
-					</header>
-					<p>Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.</p>
-				</div>
-			</article>
-
-		<!-- Portfolio -->
-			<article class="container box style2">
+		<!-- Fotos de excelencia -->
+			<article class="container box style2 excelencia">
 				<header>
-					<h2>Magnis parturient</h2>
-					<p>Justo phasellus et aenean dignissim<br />
-					placerat cubilia purus lectus.</p>
+					<h2>Fotos de la entrega de diplomas de Excelencia</h2>
+					<p>Algunos recuerdos que perdurar&aacute;n</p>
 				</header>
 				<div class="inner gallery">
 					<div class="row 0%">
@@ -289,17 +264,9 @@
 		-->
 
 		<section id="footer">
-			<ul class="icons">
-				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-				<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-			</ul>
 			<div class="copyright">
 				<ul class="menu">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Tecnolog&iacute;as para la Web</li><li>2CV9</li>
 				</ul>
 			</div>
 		</section>

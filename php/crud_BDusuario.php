@@ -4,8 +4,6 @@
 	
 	/*Selecciona de la base de datos la curp que se envio en los
 	formularios.*/
-	//$curp = $_POST["curp"];
-	//$pass = $_POST["pass"];
 	$usuario=$_SESSION["usuario"];
 	$sqlEst = "SELECT * FROM alumno WHERE usuario='$usuario'";
 	$resEst = mysqli_query($conexion, $sqlEst);
@@ -16,7 +14,7 @@
 	$resEst = mysqli_query($conexion, $sqlEst);
 	$infEst = mysqli_affected_rows($conexion);
 
-	if($infEst == 2 || $infEst == 1){
+	if($infEst == 1){
 		$filasI = mysqli_fetch_array($resEst,MYSQLI_BOTH);
 	}
 	else{

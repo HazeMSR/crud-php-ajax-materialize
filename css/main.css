@@ -2006,11 +2006,20 @@
 		margin: 0;
 		background-size: 125% auto;
 	}
-	#banner1{
+	.banner1{
 		background: #0171F1 url("images/banner.svg") bottom center no-repeat;
 	}
-	#banner2{
+	.banner2{
 		background: #0911AA url("images/banner.svg") bottom center no-repeat;
+	}
+	.banner3{
+		background: #f70c0c url("images/banner.svg") bottom center no-repeat;
+	}
+	.excelencia{
+		display: block;
+	}
+	.graduacion{
+		display: block;
 	}
 
 		.banner .button {
